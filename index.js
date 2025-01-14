@@ -56,7 +56,7 @@ app.get('/', (req, res) => {
 
 // -- Rota Plano -- //
 
-//rota get para puxar a media de preço dos planos cadastrados
+//rota get para puxar a media de preços dos planos cadastrados
 app.get("/plano/media-preco", async (req, res) => {
     try {
         const planos = await Plano.find(); // Busca todos os planos
